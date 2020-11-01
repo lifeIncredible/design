@@ -1,4 +1,4 @@
-package com.xinmei.design.design.singleton;
+package com.atguigu.design.singleton;
 
 /**
  * @Author: 苏晓虎
