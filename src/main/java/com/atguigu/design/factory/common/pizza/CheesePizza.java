@@ -1,4 +1,4 @@
-package com.atguigu.design.factory.simplefactory.pizzastore.pizza;
+package com.atguigu.design.factory.common.pizza;
 
 /**
  * @author mcRae.su start

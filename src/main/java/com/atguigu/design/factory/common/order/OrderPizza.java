@@ -1,8 +1,9 @@
-package com.atguigu.design.factory.simplefactory.pizzastore.order;
+package com.atguigu.design.factory.common.order;
 
-import com.atguigu.design.factory.simplefactory.pizzastore.pizza.CheesePizza;
-import com.atguigu.design.factory.simplefactory.pizzastore.pizza.GreekPizz;
-import com.atguigu.design.factory.simplefactory.pizzastore.pizza.Pizza;
+import com.atguigu.design.factory.common.pizza.PepperPizaa;
+import com.atguigu.design.factory.common.pizza.CheesePizza;
+import com.atguigu.design.factory.common.pizza.GreekPizz;
+import com.atguigu.design.factory.common.pizza.Pizza;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -26,7 +27,11 @@ public class OrderPizza {
             }else if (orderType.equals("cheese")){
                 pizza = new CheesePizza();
                 pizza.setName("奶酪披萨");
-            }else {
+                //假如新增一个披萨，修改量过多，假设这只是全国一个店铺。若要新增一个种类的pizza，那么就要改动多个店铺
+            }else if (orderType.equals("pepper")){
+                pizza = new PepperPizaa();
+                pizza.setName("胡椒披萨");
+            } else {
                 break;
             }
             pizza.prepare();
