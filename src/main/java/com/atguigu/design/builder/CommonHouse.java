@@ -1,23 +1,23 @@
 package com.atguigu.design.builder;
 
 /**
- * @Author: 苏晓虎
- * @Create: 2020-12-09 15:28
- * @Description:
+ * @author mcRae.su start
  */
-public class CommonHouse extends HouseBuilder {
-    @Override
-    public void buildBasic() {
-        System.out.println("普通房子打地基5米");
-    }
+public class CommonHouse extends AbstractHouse{
+	
+	@Override
+	public void buildBasic(){
+		System.out.println("普通房子打基地");
+	}
 
-    @Override
-    public void buildWalls() {
-        System.out.println("普通房子砌墙3米");
-    }
 
-    @Override
-    public void roofed() {
-        System.out.println("普通房子封顶");
-    }
+	@Override
+	public void buildWalls(){
+		System.out.println("普通方法砌墙");
+	}
+
+	@Override
+	public void roofed(){
+		System.out.println("普通房子封顶");
+	}
 }
