@@ -17,5 +17,7 @@ public class FlyweightClient {
 
         WebSite site3 = webSiteFactory.getWebSiteCategory("微信公众号");
         site3.use(new User("麦克雷"));
+
+        System.out.println("网站的分类=" + webSiteFactory.getWebSiteCount());
     }
 }
