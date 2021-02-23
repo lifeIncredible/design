@@ -35,12 +35,11 @@ public class CoffeeShop {
         System.out.println("===================================");
 
         Drink order2 = new DeCaf();
-        System.out.println("order2咖啡费用="+"\t"+order2.getPrice());
+        System.out.println("order2咖啡费用="+"\t"+order2.cost());
         System.out.println("order2咖啡描述="+"\t"+order2.getDes());
 
         order2 = new Milk(order2);
-
-        System.out.println("order2咖啡加一份牛奶费用="+"\t"+ order2.getPrice());
+        System.out.println("order2咖啡加一份牛奶费用="+"\t"+ order2.cost());
         System.out.println("order2咖啡加一份牛奶描述="+"\t"+ order2.getDes());
     }
 }

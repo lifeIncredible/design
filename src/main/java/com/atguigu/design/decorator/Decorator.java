@@ -17,7 +17,7 @@ public class Decorator extends Drink{
 
     @Override
     public float cost() {
-        return getPrice() + obj.getPrice();
+        return getPrice() + obj.cost();
     }
 
     @Override
